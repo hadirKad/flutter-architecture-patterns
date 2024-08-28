@@ -4,16 +4,18 @@ import 'blocs/counter_bloc.dart';
 import 'views/counter_view.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: BlocProvider(
         create: (context) => CounterBloc(),
-        child: CounterView(),
+        child: const CounterView(),
       ),
     );
   }

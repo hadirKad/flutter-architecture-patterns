@@ -5,15 +5,17 @@ import 'viewmodels/my_viewmodel.dart';
 import 'views/my_view.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
       create: (context) => MyViewModel(MyModel('Initial Data')),
-      child: MaterialApp(
+      child: const MaterialApp(
         home: MyView(),
       ),
     );

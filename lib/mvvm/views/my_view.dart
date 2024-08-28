@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import '../viewmodels/my_viewmodel.dart';
 
 class MyView extends StatelessWidget {
+  const MyView({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

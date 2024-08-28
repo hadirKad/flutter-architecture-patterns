@@ -2,13 +2,13 @@ import 'package:flutter/foundation.dart';
 import '../models/my_model.dart';
 
 class MyViewModel with ChangeNotifier {
-  MyModel _model;
-  MyViewModel(this._model);
+  MyModel model;
+  MyViewModel(this.model);
 
-  String get data => _model.data;
+  String get data => model.data;
 
   void updateData(String newData) {
-    _model.data = newData;
+    model.data = newData;
     notifyListeners();
   }
 }
