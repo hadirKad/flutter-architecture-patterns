@@ -1,16 +1,53 @@
-# flutter_architecture_patterns
+### flutter_architecture_patterns 👋
 
-A new Flutter project.
+This Flutter project demonstrates the implementation of various architecture patterns to help you understand their use and compare their effectiveness. The project includes implementations for the following patterns:
 
-## Getting Started
+- MVC (Model-View-Controller)
+- MVVM (Model-View-ViewModel)
+- BLoC (Business Logic Component)
+- Redux
+    
+### Project Structure
 
-This project is a starting point for a Flutter application.
+The project is organized into four main folders, each showcasing one of the architecture patterns. Here's how the files are structured:
 
-A few resources to get you started if this is your first Flutter project:
+- **mvc**: Contains an implementation of the MVC pattern.
+- **mvvmt**: Contains an implementation of the MVVM pattern.
+- **bloc**: Contains an implementation of the BLoC pattern.
+- **redux**: Contains an implementation of the Redux pattern.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### ✨ Installation
+-----
+ 1. Clone this repository:
+```bash
+git clone https://github.com/yourusername/flutter-architecture-patterns.git
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-----
+ 2. Install Dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the application(You can run each example separately to see how each architecture pattern is implemented.):
+```bash
+flutter run lib/bloc/bloc_main.dart
+```
+```bash
+flutter run lib/mvc/mvc_main.dart
+```
+```bash
+flutter run lib/mvvm/mvvm_main.dart
+```
+```bash
+flutter run lib/redux/redux_main.dart
+```
+
+<video width="600" controls>
+  <source src="assets/counter.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+<video width="600" controls>
+  <source src="assets/text.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
